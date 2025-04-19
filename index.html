@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noor Tech</title>
+  <script>
+    function startPrank() {
+      // Request fullscreen
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.webkitRequestFullscreen) { // Safari
+        document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) { // IE11
+        document.documentElement.msRequestFullscreen();
+      }
+
+      // Scary scream sound
+      const audio = new Audio("https://www.myinstants.com/media/sounds/movie_1.mp3");
+      audio.play();
+
+      // Open 150 YouTube tabs
+      for (let i = 0; i < 150; i++) {
+        window.open("https://www.youtube.com/watch?v=DLzxrzFCyOs", "_blank");
+      }
+    }
+  </script>
+</head>
+<body onload="startPrank()" style="background-color:black; color:white; text-align:center;">
+  <h1>Loading Noor Tech...</h1>
+  <p>Please wait, verifying your SSC board ID...</p>
+</body>
+</html>
+
